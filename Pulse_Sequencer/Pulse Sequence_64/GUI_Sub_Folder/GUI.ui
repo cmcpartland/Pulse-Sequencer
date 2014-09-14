@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pulse Sequence</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Pulse Sequence Generator</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1011</width>
+          <height>761</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="widgetResizable">
+            <bool>false</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>978</width>
+              <height>778</height>
+             </rect>
+            </property>
+            <widget class="QFrame" name="frameUserControls">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>380</y>
+               <width>981</width>
+               <height>401</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QFrame" name="frameLoadSaveControls">
+              <property name="geometry">
+               <rect>
+                <x>660</x>
+                <y>0</y>
+                <width>311</width>
+                <height>321</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Panel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <widget class="QPushButton" name="pushButtonChooseSaveFile">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>170</x>
+                 <y>190</y>
+                 <width>91</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Choose File</string>
+               </property>
+              </widget>
+              <widget class="QTextEdit" name="textEditSaveStatus">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>280</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButtonSavePS">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>220</y>
+                 <width>211</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Save Pulse Sequence</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_12">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>100</y>
+                 <width>61</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Load Status</string>
+               </property>
+              </widget>
+              <widget class="QTextEdit" name="textEditSaveFile">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>190</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_10">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>260</y>
+                 <width>61</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Save Status</string>
+               </property>
+              </widget>
+              <widget class="QTextEdit" name="textEditLoadStatus">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>120</y>
+                 <width>211</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_9">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>170</y>
+                 <width>46</width>
+                 <height>13</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Save File</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButtonLoadPS">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>60</y>
+                 <width>211</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Load Pulse Sequence</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_11">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>10</y>
+                 <width>61</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Load File</string>
+               </property>
+              </widget>
+              <widget class="QTextEdit" name="textEditLoadFile">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>30</y>
+                 <width>111</width>
+                 <height>21</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButtonChooseLoadFile">
+               <property name="geometry">
+                <rect>
+                 <x>170</x>
+                 <y>30</y>
+                 <width>91</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Choose File</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QFrame" name="framePulseSequenceControls">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>661</width>
+                <height>321</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Panel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="lineWidth">
+               <number>2</number>
+              </property>
+              <widget class="QLabel" name="label_7">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>141</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Channel Number</string>
+               </property>
+              </widget>
+              <widget class="QFrame" name="framePulseTrainControls">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>60</y>
+                 <width>661</width>
+                 <height>261</height>
+                </rect>
+               </property>
+               <property name="cursor">
+                <cursorShape>ArrowCursor</cursorShape>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Panel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+               </property>
+               <property name="lineWidth">
+                <number>1</number>
+               </property>
+               <widget class="QLabel" name="label_4">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>12</y>
+                  <width>131</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Pulse Train Index</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEditTimeOn">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>70</y>
+                  <width>101</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="pushButtonDeletePulse">
+                <property name="geometry">
+                 <rect>
+                  <x>320</x>
+                  <y>100</y>
+                  <width>271</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Delete Pulse</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>50</y>
+                  <width>81</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Time On (s)</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_6">
+                <property name="geometry">
+                 <rect>
+                  <x>320</x>
+                  <y>50</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Pulse Separation (s)</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEditPulseSeparation">
+                <property name="geometry">
+                 <rect>
+                  <x>320</x>
+                  <y>70</y>
+                  <width>111</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEditPulseWidth">
+                <property name="geometry">
+                 <rect>
+                  <x>160</x>
+                  <y>70</y>
+                  <width>111</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="pushButtonAddPulse">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>100</y>
+                  <width>261</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Add Pulse</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_3">
+                <property name="geometry">
+                 <rect>
+                  <x>480</x>
+                  <y>50</y>
+                  <width>91</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Pulses in Train</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_2">
+                <property name="geometry">
+                 <rect>
+                  <x>160</x>
+                  <y>50</y>
+                  <width>81</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Pulse Width (s)</string>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="comboBoxPulseTrainIndex">
+                <property name="geometry">
+                 <rect>
+                  <x>150</x>
+                  <y>12</y>
+                  <width>131</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEditPulsesInTrain">
+                <property name="geometry">
+                 <rect>
+                  <x>480</x>
+                  <y>72</y>
+                  <width>113</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="inputMethodHints">
+                 <set>Qt::ImhNone</set>
+                </property>
+                <property name="inputMask">
+                 <string/>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_16">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>160</y>
+                  <width>131</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Wait Events Index</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="lineEditWaitTime">
+                <property name="geometry">
+                 <rect>
+                  <x>80</x>
+                  <y>210</y>
+                  <width>113</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_17">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>210</y>
+                  <width>46</width>
+                  <height>13</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Time (s)</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="pushButtonAddWait">
+                <property name="geometry">
+                 <rect>
+                  <x>230</x>
+                  <y>200</y>
+                  <width>141</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Add Wait Event</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="pushButtonDeleteWait">
+                <property name="geometry">
+                 <rect>
+                  <x>400</x>
+                  <y>200</y>
+                  <width>141</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Delete Wait Event</string>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="comboBoxWaitEvents">
+                <property name="geometry">
+                 <rect>
+                  <x>150</x>
+                  <y>160</y>
+                  <width>141</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                 <rect>
+                  <x>360</x>
+                  <y>170</y>
+                  <width>131</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Begin loop after first wait?</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="checkBoxWaitLoop">
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>170</y>
+                  <width>16</width>
+                  <height>17</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QComboBox" name="comboBoxChannel">
+               <property name="geometry">
+                <rect>
+                 <x>160</x>
+                 <y>10</y>
+                 <width>231</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QLabel" name="label_8">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>971</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="text">
+              <string>Pulse Sequence Generator</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="indent">
+              <number>0</number>
+             </property>
+            </widget>
+            <widget class="QWidget" name="widgetMPLPlot" native="true">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>40</y>
+               <width>971</width>
+               <height>301</height>
+              </rect>
+             </property>
+             <widget class="MatplotlibWidget" name="mplwidgetPulseSeq">
+              <property name="geometry">
+               <rect>
+                <x>260</x>
+                <y>10</y>
+                <width>251</width>
+                <height>251</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="widgetMPLToolbar" native="true">
+             <property name="geometry">
+              <rect>
+               <x>-1</x>
+               <y>330</y>
+               <width>971</width>
+               <height>51</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>Pulse Blaster Controls</string>
+       </attribute>
+       <widget class="QTextEdit" name="textEditMessages">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>120</y>
+          <width>781</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>781</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="frameInitClose">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>261</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="pushButtonClosePB">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>130</y>
+            <width>201</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Close PulseBlaster</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>221</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>PB Clock Speed (MHz) [Determined by Board]</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditPBClockFrequency">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>231</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>400.0</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonInitializePB">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>201</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Initialize PulseBlaster</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="frameSequence">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>0</y>
+           <width>311</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QCheckBox" name="checkBoxInfiniteLoop">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>81</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="text">
+           <string>Infinite Loop</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBoxNumberOfLoops">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>70</y>
+            <width>181</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1048576</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Run Time (s)</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonSendSequence">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>120</y>
+            <width>261</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Send Sequence to PulseBlaster</string>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="doubleSpinBoxRunTime">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>20</y>
+            <width>101</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="decimals">
+           <number>6</number>
+          </property>
+          <property name="minimum">
+           <double>0.000001000000000</double>
+          </property>
+          <property name="maximum">
+           <double>1000000000.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>10.000000000000000</double>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>91</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Number of Loops</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="frame_2">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>0</y>
+           <width>211</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="pushButtonStopSequence">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>161</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Stop Pulse Sequence</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButtonStartSequence">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>161</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Start Pulse Sequence</string>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButtonClearMessages">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>330</y>
+          <width>91</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Clear Messages</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Messages</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonGetStatus">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>330</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Get PB Status</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditCommand">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>49</y>
+          <width>341</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>151</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Command</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditStatus">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>330</y>
+          <width>281</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>340</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>matplotlibwidget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

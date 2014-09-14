@@ -1,0 +1,33 @@
+from SpinCorePulseBlaster import *
+import time
+import sys
+
+# A simple script to initialize the PB board and run whatever sequence is currently loaded on the board.
+
+# Command prompt input parameters should be PB clock frequency (MHz) and run time. 
+# Run time is how long the script will stay open. The script stays open for the desired duration
+# of the pulse sequence so that when the pulse sequence is finished, the script can close the board.
+
+input_params = sys.argv
+clock = float(input_params[1])
+run_time = float(input_params[2])
+
+print 'clock: ', clock
+print 'run_time: ', run_time
+
+# default parameters for SpinCorePulseBlaster __init__() will load spinapi64.dll
+pb = SpinCorePulseBlaster()
+try:
+    pb.close()
+except RuntimeError:
+    print 'Board already closed'
+
+pb.init()
+pb.setclock(clock)
+pb.stop()
+pb.start()
+time.sleep(run_time)
+pb.stop()
+pb.close()
+print 'Pulse sequence finished'
+
